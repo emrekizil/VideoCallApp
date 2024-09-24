@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">VideoCallApp</string>
+    <string name="field_cannot_be_left_blank">This field cannot be left blank</string>
+    <string name="requires_minimum_six_character">This field requires minimum 6 character</string>
+    <string name="requires_minimum_one_number">This field requires minimum one number</string>
+    <string name="requires_minimum_one_letter">This field requires minimum one letter</string>
+    <string name="username">Username</string>
+    <string name="create_an_username">Create an username</string>
+    <string name="start_a_call">Start a call</string>
+    <string name="no_calls_yet">No Calls Yet</string>
+    <string name="your_call_history_will_list_here">Your call history will list here.</string>
+    <string name="start_a_call_uppercase">Start A Call</string>
+    <string name="enter_username_to_call">Enter username to call</string>
+    <string name="start_call">Start Call</string>
 </resources>

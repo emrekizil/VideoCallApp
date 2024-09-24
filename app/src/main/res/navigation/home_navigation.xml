@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/userCallFragment">
+    <fragment
+        android:id="@+id/userCallFragment"
+        android:name="com.emrekizil.videocallapp.ui.profile.UserCallFragment"
+        android:label="fragment_user_call"
+        tools:layout="@layout/fragment_user_call" >
+        <action
+            android:id="@+id/action_userCallFragment_to_startCallFragment2"
+            app:destination="@id/startCallFragment" />
+        <action
+            android:id="@+id/action_userCallFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startCallFragment"
+        android:name="com.emrekizil.videocallapp.ui.startcall.StartCallFragment"
+        android:label="fragment_start_call"
+        tools:layout="@layout/fragment_start_call" >
+        <action
+            android:id="@+id/action_startCallFragment2_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.emrekizil.videocallapp.ui.call.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="toUser"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_homeFragment_to_userCallFragment"
+            app:destination="@id/userCallFragment"
+            app:popUpTo="@id/home_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

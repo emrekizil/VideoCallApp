@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#9A5783F0</color>
+    <color name="create_username_color">#9A007BFF</color>
+    <color name="start_call_button_color">#BF20E60A</color>
+    <color name="message_box_color">#BF323332</color>
 </resources>
